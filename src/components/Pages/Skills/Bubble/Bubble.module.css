@@ -1,0 +1,236 @@
+@import "../../../../styles/variables.module.css";
+
+.largeBubble {
+    height: 400px;
+    width: 300px;
+    border-radius: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bubble-color);
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.smallBubble {
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bubble-color);
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    max-height: fit-content;
+}
+
+.largeBubble:hover {
+    transform: scale(1.1);
+    transition: all ease 1000ms;
+}
+
+.smallBubble:hover {
+    transform: scale(1.1);
+    transition: all ease 1000ms;
+}
+
+.largeBubble p {
+    font-size: 40px;
+    color: var(--secondary-text-color);
+}
+
+.smallBubble p {
+    font-size: 30px;
+    color: var(--secondary-text-color);
+}
+
+/* Large screens 1299px - 1899px */
+
+@media screen and (min-width: 1299px) and (max-width: 1899px) {
+    .largeBubble {
+        height: 400px;
+        width: 250px;
+        border-radius: 250px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    
+    .smallBubble {
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .largeBubble p {
+        font-size: 1.5rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .smallBubble p {
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+    }
+}
+
+/* Screens 992px */
+
+@media screen and (min-width: 992px) and (max-width: 1298px) {
+    .largeBubble {
+        height: 300px;
+        width: 200px;
+        border-radius: 250px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .smallBubble {
+        height: 160px;
+        width: 130px;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .largeBubble p {
+        font-size: 1.5rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .smallBubble p {
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+    }
+}
+
+/* Screens 768px */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .largeBubble {
+        height: 300px;
+        width: 150px;
+        border-radius: 250px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .smallBubble {
+        height: 160px;
+        width: 130px;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .largeBubble p {
+        font-size: 1.5rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .smallBubble p {
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+    }
+}
+
+/* Screens 576px */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .largeBubble {
+        height: 300px;
+        width: 150px;
+        border-radius: 250px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .smallBubble {
+        height: 160px;
+        width: 130px;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .largeBubble p {
+        font-size: 1.5rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .smallBubble p {
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+    }
+}
+
+/* Screens 320px */
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .largeBubble {
+        height: 250px;
+        width: 200px;
+        border-radius: 250px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .smallBubble {
+        height: 160px;
+        width: 130px;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bubble-color);
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .largeBubble p {
+        font-size: 1.5rem;
+        color: var(--secondary-text-color);
+    }
+    
+    .smallBubble p {
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+    }
+}

@@ -1,0 +1,184 @@
+@import "../../../styles/variables.module.css";
+
+.container {
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    background-color: var(--secondary-bg-color);
+    scroll-margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.content {
+    color: var(--basic-text-color);
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.line {
+    border-bottom: 1px solid var(--primary-bg-color);
+    float: right;
+    padding-left: 373px;
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 80vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox form {
+    width: 90%;
+}
+
+.formBox h1 {
+    color: var(--primary-bg-color);
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup:last-child {
+    margin-bottom: 0px;
+}
+
+.input {
+    outline: none;
+    border: 0.5px solid var(--primary-bg-color);
+    width: 100%;
+    color: var(--basic-text-color);
+    height: 30px;
+    font-size: 16px;
+    color: var(--contact-text-color);
+    border-radius: 5px;
+    padding: 5px; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--contact-bg-color);
+}
+
+.textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    border-radius: 5px; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    outline: none;
+    border: 0.5px solid var(--primary-bg-color);
+    background-color: var(--contact-bg-color);
+    color: var(--contact-text-color);
+}
+
+.input[type="submit"] {
+    background-color: var(--primary-bg-color);
+    border: none;
+    color: var(--primary-text-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    height: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+.label {
+    position: relative;
+    display: inline-block;
+    pointer-events: none;
+    transition: all 0.3s;
+    color: var(--basic-text-color);
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.footer {
+    position: relative;
+    flex: auto;
+    background-color: var(--primary-bg-color);
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.successMsg {
+    color: var(--msg-sent);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.errorMsg {
+    color: var(--msg-error);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+/* Screens 576px */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .formBox {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Screens 320px */
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .formBox {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        border-bottom: 1px solid var(--primary-bg-color);
+        float: right;
+        padding-left: 73px;
+    }
+}

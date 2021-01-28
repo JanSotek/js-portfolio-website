@@ -1,0 +1,181 @@
+@import "../../../../styles/variables.module.css";
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 30px;
+    box-shadow: 2px -2px 3px 0px var(--secondary-text-color);
+}
+
+.container h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: var(--secondary-text-color);
+    text-shadow: 0.5px 0.5px var(--content-color);
+}
+
+.container p {
+    text-align: center;
+    padding-top: 10px;
+    text-align: justify;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--basic-text-color);
+    font-size: 27px;
+}
+
+/* Large screens 1299px - 1899px */
+
+@media screen and (min-width: 1299px) and (max-width: 1899px) {
+    .container {
+        width: 400px;
+        height: 350px;
+        background-color: var(--secondary-bg-color);
+        border-radius: 30px;
+        box-shadow: 2px -2px 3px 0px var(--secondary-text-color);
+    }
+
+    .container p {
+        font-size: 25px;
+    }
+
+    .container h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: var(--secondary-text-color);
+        text-shadow: 0.5px 0.5px var(--content-color);
+        font-size: 1.8rem;
+    }
+}
+
+/* Screens 992px */
+
+@media screen and (min-width: 992px) and (max-width: 1298px) {
+    .container {
+        width: 300px;
+        height: 300px;
+        background-color: var(--secondary-bg-color);
+        border-radius: 30px;
+        box-shadow: 2px -2px 3px 0px var(--secondary-text-color);
+    }
+
+    .container p {
+        font-size: 19px;
+    }
+
+    .container h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: var(--secondary-text-color);
+        text-shadow: 0.5px 0.5px var(--content-color);
+        font-size: 1.8rem;
+    }
+}
+
+/* Screens 768px */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 250px;
+        height: 300px;
+        background-color: var(--secondary-bg-color);
+        border-radius: 30px;
+        box-shadow: 2px -2px 3px 0px var(--secondary-text-color);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container p {
+        text-align: center;
+        padding-top: 10px;
+        text-align: justify;
+        padding: 0 20px 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--basic-text-color);
+        font-size: 1.1rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: var(--secondary-text-color);
+        text-shadow: 0.5px 0.5px var(--content-color);
+        font-size: 1.5rem;
+    }
+}
+
+/* Screens 576px */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+        width: 90vw;
+        height: 150px;
+        background-color: var(--secondary-bg-color);
+        border-radius: 30px;
+        box-shadow: 2px -2px 3px 0px var(--secondary-text-color);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container p {
+        text-align: center;
+        padding-top: 10px;
+        text-align: justify;
+        padding: 0 20px 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--basic-text-color);
+        font-size: 1.1rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: var(--secondary-text-color);
+        text-shadow: 0.5px 0.5px var(--content-color);
+        font-size: 1.5rem;
+    }
+}
+
+/* Screens 320px */
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .container {
+        width: 90vw;
+        height: 200px;
+        background-color: var(--secondary-bg-color);
+        border-radius: 30px;
+        box-shadow: 2px -2px 3px 0px var(--secondary-text-color);
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container p {
+        text-align: center;
+        padding-top: 10px;
+        text-align: justify;
+        padding: 0 20px 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--basic-text-color);
+        font-size: 1.1rem;
+    }
+
+    .container h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: var(--secondary-text-color);
+        text-shadow: 0.5px 0.5px var(--content-color);
+        font-size: 1.3rem;
+    }
+}

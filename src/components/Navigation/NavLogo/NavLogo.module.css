@@ -1,0 +1,34 @@
+.Logo {
+    box-sizing: border-box;
+}
+
+.Logo img {
+    height: 100%;
+    width: 180px;
+    align-content: center;
+    margin-top: 3px;
+}
+
+/* Screens 475px */
+
+@media screen and (min-width: 567px) and (max-width: 767px) {
+    .Logo img {
+        height: 100%;
+        width: 130px;
+        align-content: center;
+        margin-top: 0px;
+    }
+}
+
+/* Screens 320px */
+
+@media screen and (min-width: 320px) and (max-width: 566px) {
+    .Logo img {
+        height: 100%;
+        width: 130px;
+        align-content: center;
+        margin-top: 0px;
+        display: none;
+    }
+}
+

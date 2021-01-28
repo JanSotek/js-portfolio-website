@@ -1,0 +1,139 @@
+@import "../../../styles/variables.module.css";
+
+.container {
+    min-height: calc(100vh - 180px);
+    width: 100%;
+    display: flex;
+    align-items: left;
+    background-color: var(--secondary-bg-color);
+    scroll-margin-top: 80px;
+    flex-direction: column;
+}
+
+.content {
+    color: var(--basic-text-color);
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.line {
+    border-bottom: 1px solid var(--primary-bg-color);
+    float: left;
+    padding-right: 339px;
+}
+
+.gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 300px) 0px repeat(3, 300px);
+        grid-template-rows: repeat(2, 300px);
+        grid-column-gap: 0px;
+        row-gap: 200px;
+        justify-content: center;
+        margin-top: 50px;
+        min-height: 100%;
+    }
+    
+.gridItem1 { grid-area: 0 / 2 / 2 / 3; min-width: 300px; min-height: 100px;}
+.gridItem2 { grid-area: 2 / 2 / 3 / 4; min-width: 300px; min-height: 100px;}
+.gridItem3 { grid-area: 1 / 5 / 2 / 7; min-width: 300px; min-height: 100px;}
+.gridItem4 { grid-area: 2 / 6 / 3 / 8; min-width: 300px; min-height: 100px;}
+
+
+/* Large screens 1299px - 1899px */
+
+@media screen and (min-width: 1299px) and (max-width: 1899px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 200px) 0px repeat(3, 200px);
+        grid-template-rows: repeat(2, 300px);
+        grid-column-gap: 0px;
+        row-gap: 200px;
+        justify-content: center;
+        margin-top: 50px;
+        min-height: 100%;
+    }
+    
+.gridItem1 { grid-area: 0 / 2 / 2 / 3; min-width: 300px; min-height: 100px;}
+.gridItem2 { grid-area: 2 / 2 / 3 / 4; min-width: 300px; min-height: 100px;}
+.gridItem3 { grid-area: 1 / 5 / 2 / 7; min-width: 300px; min-height: 100px;}
+.gridItem4 { grid-area: 2 / 6 / 3 / 8; min-width: 300px; min-height: 100px;}
+
+}
+
+/* Screens 992px */
+
+@media screen and (min-width: 768px) and (max-width: 1298px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 150px) 0px repeat(3, 150px);
+        grid-template-rows: repeat(2, 300px);
+        grid-column-gap: 0px;
+        row-gap: 200px;
+        justify-content: center;
+        margin-top: 50px;
+        min-height: 100%;
+    }
+    
+.gridItem1 { grid-area: 0 / 2 / 2 / 3; min-width: 300px; min-height: 100px;}
+.gridItem2 { grid-area: 2 / 2 / 3 / 4; min-width: 300px; min-height: 100px;}
+.gridItem3 { grid-area: 1 / 5 / 2 / 7; min-width: 300px; min-height: 100px;}
+.gridItem4 { grid-area: 2 / 6 / 3 / 8; min-width: 300px; min-height: 100px;}
+
+}
+
+/* Screens 768px */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 120px) 0px repeat(3, 120px);
+        grid-template-rows: repeat(2, 300px);
+        grid-column-gap: 0px;
+        row-gap: 100px;
+        justify-content: center;
+        margin-top: 50px;
+        min-height: 100%;
+    }
+    
+.gridItem1 { grid-area: 0 / 2 / 2 / 3; min-width: 150px; min-height: 100px;}
+.gridItem2 { grid-area: 2 / 2 / 3 / 4; min-width: 150px; min-height: 100px;}
+.gridItem3 { grid-area: 1 / 5 / 2 / 7; min-width: 150px; min-height: 100px;}
+.gridItem4 { grid-area: 2 / 6 / 3 / 8; min-width: 150px; min-height: 100px;}
+
+}
+
+/* Screens 576px */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: center;
+        margin-top: 50px;
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Screens 320px */
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        justify-content: center;
+        margin-top: 50px;
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        border-bottom: 1px solid var(--primary-bg-color);
+        float: left;
+        padding-right: 39px;
+    }
+}
