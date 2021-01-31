@@ -14,8 +14,8 @@ const Home = () => {
                 <div className={styles.icons}>
                     <a className={styles.link} title="LinkedIn" target="_blank" rel="noreferrer" href="https://linkedin.com/in/jan-sotek"><i className={`${styles.linkedin} fab fa-linkedin`}></i></a>
                     <a className={styles.link} title="GitHub" target="_blank" rel="noreferrer" href="https://github.com/JanSotek"><i className={`${styles.github} fab fa-github-square`}></i></a>
-                    <a className={styles.link} title="Email" href="mailto:honza.sotas@gmail.com"><i className={`${styles.email} far fa-envelope`}></i></a>
-                    <a className={styles.link} title="My resume" href="./files/resume.pdf" download="resume.pdf"><i className={`${styles.resume} far fa-file`}></i></a>
+                    <a className={styles.link} title="Email" href="mailto:jansotek@jansotek.cz"><i className={`${styles.email} far fa-envelope`}></i></a>
+                    <a className={styles.link} title="My Resume" href="./files/JS_Resume.pdf" download="JS_Resume.pdf"><i className={`${styles.resume} far fa-file`}></i></a>
                 </div>
             </div>
                 <img className="animate__fadeIn animate__animated" src={HomeImage} alt=""/>
